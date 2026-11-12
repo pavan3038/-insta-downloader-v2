@@ -278,3 +278,24 @@ fieldset.stars{border:0;margin:0 0 14px;padding:0}
 
 /* ---------- footer disclaimer ---------- */
 .foot-brand{max-width:66ch}.foot-brand p{line-height:1.55}
+/* Mobile Center & Fit Fix */
+html, body {
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
+.site-header .bar,
+.hero,
+.tabs,
+.form-card,
+.wrap,
+.wrap.narrow,
+main {
+  width: 100% !important;
+  max-width: 480px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+}
+
