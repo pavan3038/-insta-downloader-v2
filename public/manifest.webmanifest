@@ -1,0 +1,24 @@
+{
+  "name": "Insta Downloader – All-in-One Instagram Downloader",
+  "short_name": "Insta Downloader",
+  "description": "Save Instagram Reels, videos, photos, carousels and Stories you own or are allowed to download.",
+  "id": "/",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0818",
+  "theme_color": "#0b0818",
+  "lang": "en",
+  "categories": ["utilities", "multimedia"],
+  "icons": [
+    { "src": "/img/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/img/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Video downloader", "url": "/?tab=video", "icons": [{ "src": "/img/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Photo downloader", "url": "/?tab=photo", "icons": [{ "src": "/img/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Story downloader", "url": "/?tab=story", "icons": [{ "src": "/img/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

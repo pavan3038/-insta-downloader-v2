@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="hi" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact Us – Insta Downloader</title>
+<meta name="description" content="Contact the Insta Downloader team – questions, feedback or content removal requests. | संपर्क करें।">
+<link rel="canonical" href="__SITE_URL__/contact">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0b0818">
+<script src="/js/boot.js"></script>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body data-page="contact">
+<!--@header-->
+<main id="main" class="page"><div class="wrap">
+  <div class="card prose">
+    <h1 data-i18n="contact.h">Contact Us</h1>
+    <p data-i18n="contact.p">Questions, feedback, bug reports or a content-removal request? Send us a message.</p>
+    <form id="contact-form" class="form-grid" novalidate>
+      <div><label for="c-name" data-i18n="contact.name">Name</label><input class="tf" id="c-name" name="name" required maxlength="100" autocomplete="name"></div>
+      <div><label for="c-email" data-i18n="contact.email">Email</label><input class="tf" id="c-email" name="email" type="email" required maxlength="200" autocomplete="email"></div>
+      <div><label for="c-msg" data-i18n="contact.msg">Message</label><textarea class="tf" id="c-msg" name="message" required maxlength="3000"></textarea></div>
+      <div class="hp" aria-hidden="true"><label for="c-web">Website</label><input id="c-web" name="website" tabindex="-1" autocomplete="off"></div>
+      <button class="btn" type="submit" id="c-send"><span data-i18n="contact.send">Send message</span></button>
+    </form>
+    <div class="alert ok" id="c-ok" role="status" hidden><div data-i18n="contact.ok">Thank you! Your message has been received.</div></div>
+    <div class="alert err" id="c-err" role="alert" hidden><div id="c-err-text"></div></div>
+  </div>
+</div></main>
+<!--@footer-->
+<script src="/js/i18n.js" defer></script>
+<script src="/js/common.js" defer></script>
+<script src="/js/contact.js" defer></script>
+</body>
+</html>

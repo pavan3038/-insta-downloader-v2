@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="hi" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Insta Downloader – Instagram Reels, Videos, Photos &amp; Stories Downloader</title>
+<meta name="description" content="Insta Downloader: paste an Instagram link, preview it and save Reels, videos, photos, carousels and Stories in original quality — only for content you own or are allowed to download. Hindi &amp; English. | इंस्टाग्राम डाउनलोडर।">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0b0818">
+<link rel="canonical" href="__SITE_URL__/">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Insta Downloader">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Insta Downloader">
+<meta property="og:title" content="Insta Downloader – All-in-One Instagram Downloader">
+<meta property="og:description" content="Save Reels, videos, photos, carousels and Stories in original quality — for content you own or are authorised to download.">
+<meta property="og:url" content="__SITE_URL__/">
+<meta property="og:image" content="__SITE_URL__/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Insta Downloader – All-in-One Instagram Downloader">
+<meta name="twitter:image" content="__SITE_URL__/img/og.jpg">
+<link rel="alternate" hreflang="hi" href="__SITE_URL__/">
+<link rel="alternate" hreflang="en" href="__SITE_URL__/">
+<script src="/js/boot.js"></script>
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebApplication","name":"Insta Downloader","url":"__SITE_URL__/","applicationCategory":"MultimediaApplication","operatingSystem":"Any","inLanguage":["hi","en"],"browserRequirements":"Requires JavaScript","description":"Download Instagram Reels, videos, photos, carousels and Stories you own or are authorised to save.","featureList":["Reels and videos in MP4","Photos and carousel galleries","Stories (authorised content)","Download manager with queue and retry","Hindi and English","Installable web app"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How do I download an Instagram video or photo?","acceptedAnswer":{"@type":"Answer","text":"Copy the link in Instagram (Share, then Copy link), paste it into the box, press Download, check the preview and press Download on the item you want."}},
+{"@type":"Question","name":"What content is supported?","acceptedAnswer":{"@type":"Answer","text":"Reels, videos, photos, carousel posts and Stories of your own connected account through the official Instagram API, plus public content where the site administrator has connected an authorised source."}},
+{"@type":"Question","name":"Can I download from private accounts?","acceptedAnswer":{"@type":"Answer","text":"No. Private content and anything that requires bypassing login or access controls is never accessed."}},
+{"@type":"Question","name":"Where is the file saved?","acceptedAnswer":{"@type":"Answer","text":"Android: your Downloads folder. iPhone: Files, Downloads, or use Save to Photos. Computer: the browser's download folder."}},
+{"@type":"Question","name":"Is the quality reduced?","acceptedAnswer":{"@type":"Answer","text":"No. Files are passed through without re-encoding. You get the quality that the source makes available."}}
+]}]}
+</script>
+</head>
+<body data-page="home">
+<!--@header-->
+<main id="main">
+  <section class="hero" id="downloader" aria-labelledby="h1">
+    <div class="wrap">
+      <span class="badge"><i></i><span data-i18n="hero.badge">Fast · Secure · All-in-One</span></span>
+      <h1 id="h1"><span data-i18n="hero.t1">All-in-One Instagram</span> <em data-i18n="hero.t2">Downloader</em></h1>
+      <p class="lead" data-i18n="hero.sub">Reels, videos, photos, carousels and Stories — paste the link, preview it and save in original quality.</p>
+
+      <div class="card form-card" id="form-card">
+        <div class="tabs" role="tablist" aria-label="Downloader type" data-i18n-aria="a11y.tabs">
+          <button type="button" role="tab" class="tab" id="tab-all" data-mode="all" aria-selected="true" aria-controls="dl-panel"><span class="e" aria-hidden="true">⚡</span><span data-i18n="tab.all">All Downloader</span></button>
+          <button type="button" role="tab" class="tab" id="tab-video" data-mode="video" aria-selected="false" aria-controls="dl-panel" tabindex="-1"><span class="e" aria-hidden="true">🎬</span><span data-i18n="tab.video">Video</span></button>
+          <button type="button" role="tab" class="tab" id="tab-photo" data-mode="photo" aria-selected="false" aria-controls="dl-panel" tabindex="-1"><span class="e" aria-hidden="true">📷</span><span data-i18n="tab.photo">Photo</span></button>
+          <button type="button" role="tab" class="tab" id="tab-story" data-mode="story" aria-selected="false" aria-controls="dl-panel" tabindex="-1"><span class="e" aria-hidden="true">⭕</span><span data-i18n="tab.story">Story</span></button>
+        </div>
+        <div id="dl-panel" role="tabpanel" aria-labelledby="tab-all">
+          <form id="dl-form" novalidate autocomplete="off">
+            <div class="field">
+              <div class="input-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+                <input id="url" name="url" type="url" inputmode="url" autocapitalize="off" spellcheck="false" required
+                       data-i18n-placeholder="ph.all" placeholder="Paste Instagram link..." data-i18n-aria="form.label" aria-label="Instagram link" aria-describedby="tab-hint">
+                <button class="mini clear" type="button" id="clear-btn" hidden data-i18n-aria="form.clear" aria-label="Clear">✕</button>
+                <button class="mini" type="button" id="paste-btn" data-i18n="form.paste">Paste</button>
+              </div>
+              <button class="btn" type="submit" id="go-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg><span data-i18n="form.submit">Download</span></button>
+            </div>
+            <p class="hint" id="tab-hint" data-i18n="tab.hint.all">Reels, videos, photos, carousels and Stories — the type is detected automatically.</p>
+          </form>
+        </div>
+      </div>
+
+      <div class="alert warn" id="api-notice" role="status" hidden><div><strong data-i18n="status.title">API not configured. </strong><span data-i18n="status.body"></span></div></div>
+
+      <div class="state-card err" id="error-box" role="alert" hidden>
+        <div class="state-ic" aria-hidden="true">⚠️</div>
+        <div class="state-body"><strong id="error-title"></strong><p id="error-text"></p></div>
+        <button class="btn ghost sm" type="button" id="error-retry" data-i18n="btn.retry">Retry</button>
+      </div>
+
+      <div class="card note" id="story-note" hidden><strong data-i18n="story.h">About Stories</strong><p data-i18n="story.p"></p></div>
+
+      <div class="card result skeleton-card" id="skeleton" hidden aria-hidden="true">
+        <div class="sk sk-line w40"></div>
+        <div class="sk-grid"><div class="sk sk-media"></div><div class="sk sk-media"></div><div class="sk sk-media"></div></div>
+      </div>
+
+      <section class="card result" id="result" hidden aria-live="polite" aria-labelledby="r-title">
+        <header class="result-head">
+          <div class="rh-main">
+            <div class="rh-badges"><span class="pill" id="r-type"></span><span class="pill alt" id="r-kind"></span><span class="pill alt" id="r-count" hidden></span></div>
+            <h2 id="r-title"></h2>
+          </div>
+          <div class="rh-actions">
+            <button class="btn sm" type="button" id="dl-all" hidden></button>
+            <button class="btn ghost sm" type="button" id="share-btn" data-i18n="btn.share">Share</button>
+            <button class="btn ghost sm" type="button" id="copy-btn" data-i18n="btn.copy">Copy link</button>
+            <button class="btn ghost sm" type="button" id="new-btn" data-i18n="btn.new">New link</button>
+          </div>
+        </header>
+        <div class="gallery" id="gallery"></div>
+      </section>
+
+      <section class="card dm" id="dm" hidden aria-labelledby="dm-h">
+        <header class="dm-head"><h2 id="dm-h" data-i18n="dm.h">Download manager</h2><button class="btn ghost sm" type="button" id="dm-clear" data-i18n="dm.clear">Clear finished</button></header>
+        <ul class="dm-list" id="dm-list"></ul>
+      </section>
+
+      <ul class="chips">
+        <li data-i18n="chip.1">Video · Photo · Story</li>
+        <li data-i18n="chip.2">Original quality</li>
+        <li data-i18n="chip.3">No login needed</li>
+        <li data-i18n="chip.4">Android · iPhone · PC</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="wrap"><!-- AD SLOT (middle): paste your ad network code inside this div. The placeholder hides itself automatically once you add any element. Native / in-article unit between the downloader and the features. -->
+<div class="ad-slot ad-slot-middle" role="complementary" aria-label="Advertisement"><span class="ad-ph" data-i18n="ad.label">Advertisement</span></div></div>
+
+  <section id="features" class="deferred" aria-labelledby="f-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="f-h" data-i18n="feat.h">Why Insta Downloader?</h2><p data-i18n="feat.p">Clean, fast and built around authorised sources.</p></div>
+      <div class="grid">
+        <article class="card feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h8l-1 8 10-12h-8z"/></svg></div><h3 data-i18n="feat.1h">Everything in one place</h3><p data-i18n="feat.1p"></p></article>
+        <article class="card feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m10 9 5 3-5 3z"/></svg></div><h3 data-i18n="feat.2h">Preview first</h3><p data-i18n="feat.2p"></p></article>
+        <article class="card feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.5 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg></div><h3 data-i18n="feat.3h">Original quality</h3><p data-i18n="feat.3p"></p></article>
+        <article class="card feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg></div><h3 data-i18n="feat.4h">Download manager</h3><p data-i18n="feat.4p"></p></article>
+        <article class="card feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div><h3 data-i18n="feat.5h">Authorised &amp; secure</h3><p data-i18n="feat.5p"></p></article>
+        <article class="card feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3 data-i18n="feat.6h">Install like an app</h3><p data-i18n="feat.6p"></p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="alt deferred" aria-labelledby="how-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="how-h" data-i18n="how.h">How to download</h2><p data-i18n="how.p">Three simple steps.</p></div>
+      <ol class="steps">
+        <li class="card"><h3 data-i18n="how.1h">Copy the link</h3><p data-i18n="how.1p"></p></li>
+        <li class="card"><h3 data-i18n="how.2h">Pick a tab &amp; paste</h3><p data-i18n="how.2p"></p></li>
+        <li class="card"><h3 data-i18n="how.3h">Download</h3><p data-i18n="how.3p"></p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="deferred" aria-labelledby="sup-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="sup-h" data-i18n="sup.h">What is and is not supported</h2></div>
+      <div class="two">
+        <div class="card"><h3 data-i18n="sup.okh">✅ Supported</h3><ul>
+          <li data-i18n="sup.ok1"></li><li data-i18n="sup.ok2"></li><li data-i18n="sup.ok3"></li></ul></div>
+        <div class="card"><h3 data-i18n="sup.noh">⛔ Not supported</h3><ul>
+          <li data-i18n="sup.no1"></li><li data-i18n="sup.no2"></li><li data-i18n="sup.no3"></li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="history" class="alt deferred" aria-labelledby="hist-h">
+    <div class="wrap">
+      <div class="hist-head">
+        <div><h2 id="hist-h" data-i18n="hist.h">Recent activity</h2><p class="sub" data-i18n="hist.p"></p></div>
+        <button class="btn sm danger" id="clear-hist" type="button" data-i18n="hist.clear">Clear history</button>
+      </div>
+      <ul class="hist" id="hist-list"></ul>
+      <div class="empty-state card" id="hist-empty"><div class="es-ic" aria-hidden="true">🗂️</div><p data-i18n="hist.empty">No downloads yet.</p></div>
+    </div>
+  </section>
+
+  <section id="faq" class="deferred" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="faq-h" data-i18n="faq.h">Frequently asked questions</h2></div>
+      <div class="faq">
+        <details class="card"><summary><span lang="hi">कैसे डाउनलोड करें?</span><span lang="en">How do I download?</span></summary>
+          <div class="ans"><span lang="hi">Instagram में Share → Copy link दबाएँ, लिंक ऊपर बॉक्स में पेस्ट करें, "डाउनलोड" दबाएँ, प्रीव्यू देखें और जो आइटम चाहिए उसका डाउनलोड बटन दबाएँ। कैरोसेल में "सब डाउनलोड करें" भी मिलता है।</span><span lang="en">In Instagram tap Share → Copy link, paste it into the box above, press Download, check the preview and press Download on the item you want. Carousels also have “Download all”.</span></div></details>
+        <details class="card"><summary><span lang="hi">कौन-सा कंटेंट सपोर्टेड है?</span><span lang="en">What content is supported?</span></summary>
+          <div class="ans"><span lang="hi">आपके अपने (कनेक्टेड) अकाउंट की रील, वीडियो, फ़ोटो, कैरोसेल और स्टोरी — आधिकारिक Instagram API से। साथ ही Public कंटेंट, अगर साइट एडमिन ने कोई अधिकृत स्रोत जोड़ा हो। कृपया सिर्फ़ वही कंटेंट सेव करें जो आपका हो या जिसकी आपको अनुमति हो।</span><span lang="en">Reels, videos, photos, carousels and Stories of your own (connected) account through the official Instagram API, plus public content where the site admin has connected an authorised source. Please save only content you own or have permission for.</span></div></details>
+        <details class="card"><summary><span lang="hi">डाउनलोड में एरर क्यों आता है?</span><span lang="en">Why do I get a download error?</span></summary>
+          <div class="ans"><span lang="hi">आम कारण: लिंक गलत है; कंटेंट Private है या हट चुका है (स्टोरी 24 घंटे में खत्म होती हैं); वीडियो कनेक्टेड अकाउंट का नहीं है; API की सीमा/Key की समस्या; या इंटरनेट कटा। एरर संदेश कारण बताता है — नेटवर्क की वजह से फेल हुआ डाउनलोड "फिर कोशिश करें" से दोबारा चल जाता है।</span><span lang="en">Common causes: a wrong link; the content is private or removed (Stories expire after 24 hours); the media is not from the connected account; an API limit or key problem; or a lost connection. The message tells you which — a download that failed because of the network can be resumed with “Retry”.</span></div></details>
+        <details class="card"><summary><span lang="hi">मेरी प्राइवेसी का क्या?</span><span lang="en">What about my privacy?</span></summary>
+          <div class="ans"><span lang="hi">हम आपका Instagram पासवर्ड कभी नहीं माँगते और मीडिया फ़ाइलें सर्वर पर सेव नहीं करते। डाउनलोड हिस्ट्री सिर्फ़ आपके ब्राउज़र में रहती है (लिंक, प्रकार, तारीख़) और एक क्लिक में मिट जाती है। साइट सिर्फ़ गुमनाम गिनतियाँ रखती है, IP पते नहीं। विवरण: प्राइवेसी पॉलिसी।</span><span lang="en">We never ask for your Instagram password and never store media files on the server. Your history stays in your browser (link, type, date) and is removed with one click. The site keeps only anonymous counters, no IP addresses. Details: Privacy Policy.</span></div></details>
+        <details class="card"><summary><span lang="hi">कौन-से डिवाइस सपोर्टेड हैं?</span><span lang="en">Which devices are supported?</span></summary>
+          <div class="ans"><span lang="hi">Android, iPhone/iPad और कंप्यूटर के आधुनिक ब्राउज़र। Android में फ़ाइल Downloads फ़ोल्डर में जाती है। iPhone में Files → Downloads में सेव होती है, और "Photos में सेव करें" से Share शीट में Save Video/Image चुन सकते हैं। साइट को ऐप की तरह इंस्टॉल भी कर सकते हैं — पर डाउनलोड के लिए इंटरनेट ज़रूरी है।</span><span lang="en">Modern browsers on Android, iPhone/iPad and computers. On Android files go to your Downloads folder. On iPhone they are saved to Files → Downloads, and “Save to Photos” opens the share sheet where you choose Save Video/Image. You can also install the site as an app — downloading still needs internet.</span></div></details>
+        <details class="card"><summary><span lang="hi">क्वालिटी की सीमाएँ क्या हैं?</span><span lang="en">What are the quality limitations?</span></summary>
+          <div class="ans"><span lang="hi">फ़ाइल बिना re-encode किए दी जाती है, इसलिए क्वालिटी वही है जो स्रोत देता है। अगर स्रोत एक से ज़्यादा क्वालिटी देता है तो चुनने का विकल्प दिखता है; वरना सिर्फ़ उपलब्ध क्वालिटी मिलती है। अवधि, रेज़ोल्यूशन और आकार तभी दिखते हैं जब वे असल में उपलब्ध हों।</span><span lang="en">Files are passed through without re-encoding, so quality equals what the source provides. If the source offers several qualities you can choose; otherwise you get the single available one. Duration, resolution and size are shown only when they are really available.</span></div></details>
+        <details class="card"><summary><span lang="hi">क्या Private अकाउंट का कंटेंट डाउनलोड होगा?</span><span lang="en">Can I download from private accounts?</span></summary>
+          <div class="ans"><span lang="hi">नहीं। Private कंटेंट, लॉगिन या DRM जैसे एक्सेस नियंत्रण को बायपास नहीं किया जाता।</span><span lang="en">No. Private content is never accessed and login, DRM or other access controls are never bypassed.</span></div></details>
+        <details class="card"><summary><span lang="hi">"API कॉन्फ़िगर नहीं है" का क्या मतलब है?</span><span lang="en">What does "API not configured" mean?</span></summary>
+          <div class="ans"><span lang="hi">यह साइट सिर्फ़ अधिकृत API से काम करती है। साइट के एडमिन ने अभी API Key/Token सेट नहीं किया है। (एडमिन: README और .env.example देखें।)</span><span lang="en">This site only works through authorised APIs and the admin has not set an API key/token yet. (Admins: see README and .env.example.)</span></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="feedback" class="alt deferred" aria-labelledby="fb-h">
+    <div class="wrap narrow">
+      <div class="sec-head"><h2 id="fb-h" data-i18n="fb.h">Rating &amp; feedback</h2><p data-i18n="fb.p"></p></div>
+      <div class="card fb-card">
+        <form id="fb-form" novalidate>
+          <div class="fb-row">
+            <label for="fb-type" data-i18n="fb.type">Type</label>
+            <select id="fb-type" class="tf">
+              <option value="rating" data-i18n="fb.type.rating">Rating</option>
+              <option value="feedback" data-i18n="fb.type.feedback">Feedback</option>
+              <option value="problem" data-i18n="fb.type.problem">Report a problem</option>
+            </select>
+          </div>
+          <fieldset class="stars" id="fb-stars">
+            <legend data-i18n="fb.rating">Your rating</legend>
+            <div class="star-row">
+              <input type="radio" name="rating" id="st1" value="1"><label for="st1" aria-label="1 star">★</label>
+              <input type="radio" name="rating" id="st2" value="2"><label for="st2" aria-label="2 stars">★</label>
+              <input type="radio" name="rating" id="st3" value="3"><label for="st3" aria-label="3 stars">★</label>
+              <input type="radio" name="rating" id="st4" value="4"><label for="st4" aria-label="4 stars">★</label>
+              <input type="radio" name="rating" id="st5" value="5"><label for="st5" aria-label="5 stars">★</label>
+            </div>
+          </fieldset>
+          <div class="fb-row"><label for="fb-msg" data-i18n="fb.message">Message</label><textarea id="fb-msg" class="tf" maxlength="1500" rows="4"></textarea></div>
+          <div class="fb-row"><label for="fb-email" data-i18n="fb.email">Email (optional)</label><input id="fb-email" class="tf" type="email" maxlength="200" autocomplete="email"></div>
+          <div class="hp" aria-hidden="true"><label for="fb-web">Website</label><input id="fb-web" tabindex="-1" autocomplete="off"></div>
+          <div class="alert err" id="fb-err" role="alert" hidden><div id="fb-err-text"></div></div>
+          <button class="btn" type="submit" id="fb-send"><span data-i18n="fb.send">Send feedback</span></button>
+        </form>
+        <div class="fb-done" id="fb-done" hidden role="status">
+          <div class="es-ic" aria-hidden="true">💜</div><p data-i18n="fb.ok">Thank you! Your feedback was received.</p>
+          <button class="btn ghost sm" type="button" id="fb-again" data-i18n="fb.again">Send another</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!--@footer-->
+<script src="/js/i18n.js" defer></script>
+<script src="/js/common.js" defer></script>
+<script src="/js/media-url.js" defer></script>
+<script src="/js/history.js" defer></script>
+<script src="/js/downloads.js" defer></script>
+<script src="/js/app.js" defer></script>
+<script src="/js/feedback.js" defer></script>
+</body>
+</html>

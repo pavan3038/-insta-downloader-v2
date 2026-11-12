@@ -1,0 +1,2 @@
+# ads.txt – add the lines given by your ad network AFTER it approves your site, e.g.
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

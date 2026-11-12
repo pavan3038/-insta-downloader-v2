@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin – Insta Downloader</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0b0818">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<script src="/js/boot.js"></script>
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/admin.css">
+</head>
+<body class="adm">
+<header class="adm-bar">
+  <strong>Insta Downloader · Admin</strong>
+  <span class="adm-spacer"></span>
+  <span id="a-upd" class="muted small"></span>
+  <button id="a-refresh" class="icon-btn sm" type="button" hidden>Refresh</button>
+  <button id="a-logout" class="icon-btn sm" type="button" hidden>Log out</button>
+</header>
+
+<main class="adm-main">
+  <section id="a-login" class="card adm-login" hidden>
+    <h1>Admin login</h1>
+    <form id="a-form" autocomplete="on">
+      <label>Username<input id="a-user" name="username" type="text" autocomplete="username" required maxlength="64"></label>
+      <label>Password<input id="a-pass" name="password" type="password" autocomplete="current-password" required maxlength="200"></label>
+      <p id="a-err" class="adm-err" role="alert" hidden></p>
+      <button class="btn" type="submit" id="a-go">Log in</button>
+    </form>
+  </section>
+
+  <section id="a-off" class="card adm-login" hidden>
+    <h1>Admin is disabled</h1>
+    <p>Set <code>ADMIN_USER</code> and <code>ADMIN_PASSWORD_HASH</code> in <code>.env</code> (create the hash with <code>npm run admin:hash</code>) and restart the server.</p>
+  </section>
+
+  <div id="a-dash" hidden>
+    <div id="a-kpis" class="adm-kpis"></div>
+    <div class="adm-grid">
+      <section class="card"><h2>Last 14 days</h2><div id="a-chart"></div><div class="adm-legend"><span><i class="k1"></i>Requests</span><span><i class="k2"></i>Failed</span></div></section>
+      <section class="card"><h2>Provider health</h2><div id="a-prov"></div><button id="a-check" class="btn sm" type="button">Run health check</button><p id="a-check-out" class="muted small"></p></section>
+      <section class="card"><h2>Usage by tab</h2><div id="a-mode"></div></section>
+      <section class="card"><h2>Media types</h2><div id="a-type"></div></section>
+      <section class="card"><h2>Error codes</h2><div id="a-code"></div></section>
+      <section class="card"><h2>Feedback &amp; rating</h2><div id="a-fb-sum"></div></section>
+      <section class="card wide"><h2>Recent errors</h2><div id="a-errs" class="adm-scroll"></div></section>
+      <section class="card wide"><h2>Latest feedback</h2><div id="a-fb" class="adm-scroll"></div></section>
+      <section class="card"><h2>System</h2><div id="a-sys"></div></section>
+    </div>
+    <p class="muted small">All numbers are real counters kept on this server since <span id="a-since"></span>. No IP addresses, links or media are stored. If the host has an ephemeral disk, counters reset on redeploy.</p>
+  </div>
+</main>
+<script src="/js/admin.js" defer></script>
+</body>
+</html>
