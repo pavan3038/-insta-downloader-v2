@@ -297,5 +297,25 @@ main {
   margin-left: auto !important;
   margin-right: auto !important;
   box-sizing: border-box !important;
+}/* Universal Mobile Center & No-Overflow Fix */
+* {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
 }
+
+html, body {
+  width: 100% !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+header, nav, main, footer, section, .wrap, .hero, .tabs, .form-card {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  max-width: 480px !important;
+}
+
 
